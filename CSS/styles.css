@@ -232,6 +232,9 @@ body{
   }
 }
 @media(max-width: 500px){
+  body{
+    overflow-x: hidden;
+  }
   
   #header nav{
     
@@ -239,7 +242,73 @@ body{
     
   }
   .details-container{
+    flex-direction: column; 
+    margin: 10px;
+  }
+  .details-container div:first-of-type h1{
+    margin: 10px 0 10px 0;
+    text-align: center;
+
+  }
+  .details-container div:first-of-type p{
+    margin: 0;
+    text-align: center;
+  }
+  .details-container div:last-of-type img{
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+  }
+  #projects>h1{
+    margin: 10px 0 10px 0;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .payment-app__project{
     flex-direction: column;
-    
+  }
+  .payment-app__project div:first-of-type h1{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 10px 0 10px 0;
+  }
+  .payment-app__project div:first-of-type p{
+    text-align: center;
+    max-width: 100%;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  .payment-app__project div:last-of-type h1{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 10px 0 10px 0;
+  }
+  .payment-app__project div:last-of-type p{
+    text-align: center;
+    max-width: 100%;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  .pizza-project{
+    margin-top: 20px;
+  }
+  .site-links{
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+  }
+  .contact-details{
+    flex-direction: column;
+    margin: 0;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .contact-details div a{
+    font-size: 1.5rem;
+  }
+  #contact>h1, p{
+    text-align: center;
+    margin: 10px 0 10px 0;
   }
 }
