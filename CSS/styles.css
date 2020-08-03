@@ -6,7 +6,7 @@
 body{
   background: white;
   color: black;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 #resume{
   background-color: black;
