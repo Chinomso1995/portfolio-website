@@ -107,20 +107,37 @@ body{
     transform: rotate(360deg);
   }
 }
-
 #resume{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.box-wrapper{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+}
+.box{
   background-color: black;
+  width: calc(100vw / 4);
+  height: 0vh;
+}
+.resume{
+  margin-top: 30px;
   color: white;
   position: absolute;
-  z-index: 100;
-  width: 100vw;
-  height: 100vh;
+  width: 95vw;
+  z-index: 200;
   top: 0;
   left: 0;
   font-family: 'Dosis', sans-serif;
-  display: none;
+  opacity: 0;
+  visibility: hidden;
 }
-#resume nav{
+.resume nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -181,6 +198,7 @@ body{
 .resume-content__nav ul li a:hover{
   letter-spacing: 10px;
 }
+
 #header nav div:first-of-type h1{
   font-family: 'Dosis', sans-serif;
   font-size: 2rem;
@@ -310,6 +328,9 @@ body{
   font-size: 0.8rem;
   margin: 40px 0 0 20px;
 }
+.noScroll {
+  overflow-y: hidden;
+}
 @media(min-width: 768px) and (max-width: 1024px){
   .details-container{
     margin: 40px;
@@ -335,7 +356,7 @@ body{
   body{
     overflow-x: hidden;
   }
-  #resume nav{
+  .resume nav{
     margin: 40px 20px 40px 20px;
   }
   .resume-content{
