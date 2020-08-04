@@ -143,20 +143,7 @@ body{
   align-items: center;
   margin: 40px 40px 20px 40px;
 }
-.resume-navbar div{
-  background-color: white;
-  height: 2px;
-  margin: 8px;
-  position: relative;
-}
-.resume-navbar div:first-of-type{
-  width: 40px;
-  transform: rotate(45deg) translate(7px);
-}
-.resume-navbar div:last-of-type{
-  width: 40px;
-  transform: rotate(-45deg) translate(7px);
-}
+
 .resume-content{
   display: flex;
   align-items: flex-start;
@@ -210,7 +197,10 @@ body{
   margin: 40px 40px 20px 40px;
 }
 .navbar{
-  position: relative;
+  position: absolute;
+  z-index: 2;
+  right: 10px;
+  cursor: pointer;
 }
 .navbar div{
   background-color: black;
@@ -218,13 +208,33 @@ body{
   margin: 8px;
   position: relative;
 }
-.navbar div:first-of-type{
-  width: 40px;
-  
-}
-.navbar div:last-of-type{
+.bar1{
   width: 32px;
   
+}
+.bar2{
+  width: 32px;
+}
+.bar3{
+  width: 32px;
+  
+}
+.nav-anim{
+  
+}
+.nav-anim .bar1 {
+  transform: rotate(-45deg) translate(-6px, 7px);
+  background-color: white;
+}
+
+.nav-anim .bar2 {
+  transform: translateX(200%);
+  opacity: 0;
+}
+
+.nav-anim .bar3 {
+  transform: rotate(45deg) translate(-7px, -8px);
+  background-color: white;
 }
 #details{
   margin-top: 50px;
@@ -246,8 +256,10 @@ body{
   font-size: 4rem;
 }
 .details-container div:last-of-type img{
-  width: 300px;
-  height: 300px;
+  height: auto; 
+  width: auto; 
+  max-width: 300px; 
+  max-height: 300px;
 }
 #projects{
   font-family: 'Dosis', sans-serif;
@@ -281,6 +293,24 @@ body{
   margin-left: 40px;
   max-width: 50%;
   font-size: 1.2rem;
+}
+.fintech-project img{
+  height: auto; 
+  width: auto; 
+  max-width: 400px; 
+  max-height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.pizza-project img{
+  height: auto; 
+  width: auto; 
+  max-width: 400px; 
+  max-height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 .site-links{
   max-width: 50%;
