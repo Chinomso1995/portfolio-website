@@ -25,6 +25,7 @@ navIcon.addEventListener('click', ()=>{
 const allLinks = document.querySelectorAll('.list-items li a');
 allLinks.forEach(link => {
   link.addEventListener('click', () => {
+     navIcon.classList.remove('nav-anim');
       document.body.classList.remove('noScroll');
       tl.reverse()
   })
