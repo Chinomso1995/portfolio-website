@@ -57,6 +57,24 @@ section{
     width: 100%;
     max-width: 650px;
 }
+.jobs{
+  margin-bottom: 100px;
+}
+.job{
+  margin-bottom: 25px;
+}
+.job-company{
+  font-weight: 700;
+}
+.job-time{
+  font-size: 0.9rem;
+}
+.time-place{
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
 .section-content p{
   margin-top: 0;
     margin-bottom: 25px;
@@ -162,7 +180,7 @@ list-style: none;
     display: inline-block;
   }
 }
-@media (max-width: 500px){
+@media (max-width: 700px){
   .intro{
     padding: 70px 50px;
   }
@@ -186,6 +204,9 @@ list-style: none;
     width: 47%;
     margin-right: 5px;
     margin-bottom: 25px
+  }
+  .time-place{
+    flex-direction: column;
   }
   .footer{
     flex-direction: column;
